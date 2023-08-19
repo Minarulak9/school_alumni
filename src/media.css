@@ -10,6 +10,12 @@
     }
     #nav{
         border-radius: 12px;
+        box-shadow: 5px 5px 20px -10px black;
+        z-index: 100;
+        position: sticky;
+    }
+    #container{
+        padding: 5px 0 10vh 0;
     }
     #sidebar{
         position: fixed;
@@ -24,10 +30,11 @@
         display: flex;
         align-items: center;
         z-index: 100;
+        box-shadow: -5px -5px 20px -10px;
     }
     #posts{
-        padding: 2rem 0 4rem 0;
         width: 100%;
+        background-color: #f3f3ff;
     }
     #sidebar .links{
         width: 100%;
@@ -42,17 +49,31 @@
     }
     
 #sidebar .pop-up{
-    transform: translate(0px,-30px) rotate(45deg);
-    background-color: rgb(226, 236, 255);
-    border: 10px solid rgb(255, 255, 255);
-    border-radius: 15px;
-    box-sizing: content-box;
+    /* transform: translate(0px,-30px) rotate(45deg); */
+    background-color: rgb(255, 255, 255);
+    /* border: 10px solid rgb(255, 255, 255); */
+    align-items: center;
+    border-radius:50%;
+    /* box-sizing: content-box; */
 }
 #sidebar .pop-up i{
-    transform: rotate(45deg);
+    /* transform: rotate(45deg); */
 }
 .post .controls button{
     flex-direction: column;
 }
+.post .controls button i {
+    font-size: 1rem;
+}
     
+.details{
+    font-size: .8rem;
+}
+.post .header .img{
+    width: 40px;
+    height: 40px;
+}
+.post:last-child{
+    margin-bottom: 0 !important;
+}
 }
