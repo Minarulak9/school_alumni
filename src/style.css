@@ -90,7 +90,7 @@ body{
     align-items: center;
     list-style: none;
     gap: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 #sidebar .links i{
     color: rgb(59, 59, 255);
@@ -203,4 +203,66 @@ body{
 
 .post .post_content img{
     width: 100%;
+}
+.para{
+    padding: 1rem;
+}
+#write_post{
+    padding-top: 1rem;
+    width: 70%;
+    margin: auto;
+}
+.post_form{
+    /* background-color: gainsboro; */
+    box-shadow: 5px 5px 20px -15px black;
+    border-radius: 10px;
+    border: 1px solid rgb(231, 231, 231);
+}
+.post_form .header{
+    border-radius: 10px;
+    padding: .5rem;
+    background-color: #dfdfdf;
+}
+
+.post_form .post_body{
+    padding: .5rem;
+}
+.post_desc{
+    width: 100%;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.post_btn{
+    padding: 10px 30px;
+    background-color: rgb(59, 59, 255);
+    border: none;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.d-none{
+    display: none;
+}
+.attachments {
+    display: flex;
+    gap: 1rem;
+    margin: .5rem 0;
+}
+.attachments .att{
+    width: 50px;
+}
+.attachments .att label {
+    display: flex;
+    background-color: rgb(235, 235, 235);
+    padding: 5px 0;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.attachments .att label img{
+    width: 60%;
 }
