@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/style.css">
+    <script src="./src/app.js"></script>
+    <link rel="stylesheet" href="./src/media.css">
+    
+</head>
+<body>
+    <div id="app">
+        <div id="nav">
+            <div class="brand">
+                <h1>Welcome</h1>
+            </div>
+            <div class="right">
+                <div class="search mob_hide">
+                    <input type="text" placeholder="Search...">
+                    <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div class="notification">
+                    <i class="fa-regular fa-bell"></i>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            <div id="sidebar">
+                <ul class="links">
+                    <li><a href="./index.html"><i class="fa-solid fa-house"></i></a></li>
+                    <li class="pc_hide"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <li class="pop-up"><a href="./write_post.html"><i class="fa-solid fa-plus"></i></a></li>
+                    <li class="active"><a href="./messages.html"><i class="fa-solid fa-envelope"></i></a></li>
+                    <li><a href="./profile.html"><i class="fa-solid fa-user"></i></a></li>
+                </ul>
+            </div>
+            <div id="content">
+                <div id="messages" class="contect-box">
+                  <h3 class="header">Messages</h3>
+                  <ul>
+                    <li>
+                      <a href="./message_show.html">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp" alt="">
+                        </div>
+                        <div class="details">
+                          <h4 class="name">Rahul Kumar</h4>
+                          <span class="msg">Let's go for a long derive tomorrow</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="time">10:30PM</div>
+                      </div>
+                    </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                      <div class="left">
+                        <div class="img">
+                          <img src="https://d2v5dzhdg4zhx3.cloudfront.net/web-assets/images/storypages/short/linkedin-profile-picture-maker/dummy_image/thumb/004.webp" alt="">
+                        </div>
+                        <div class="details">
+                          <h4 class="name">Rahul Kumar</h4>
+                          <span class="msg">Let's go for a long derive tomorrow</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="time">10:30PM</div>
+                      </div>
+                    </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+          },
+          768: {
+            slidesPerView: 6,
+            spaceBetween: 50,
+          },
+          1024: {
+            slidesPerView: 8,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+</body>
+</html>
